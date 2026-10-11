@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>Index - Ideaplug, Graphics Designing </title>
+    <title>Index - Ideaplug, Graphics Designing</title>
     <meta name="description" content="" />
     <meta name="keywords" content="" />
 
@@ -47,9 +47,12 @@
       <div
         class="container position-relative d-flex align-items-center justify-content-between"
       >
-        <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
-          <img src="assets/img/logo.PNG" class="img-fluid rounded" alt="Logo">
-         <!-- <h1 class="sitename">IdeaPlug</h1> -->
+        <a
+          href="index.html"
+          class="logo d-flex align-items-center me-auto me-xl-0"
+        >
+          <img src="assets/img/l7.png" class="img-fluid rounded" alt="Logo" />
+          <!-- <h1 class="sitename">IdeaPlug</h1> -->
         </a>
 
         <nav id="navmenu" class="navmenu">
@@ -80,10 +83,8 @@
             <div class="col-lg-6 order-2 order-lg-1">
               <div class="hero-content">
                 <h1 data-aos="fade-up" data-aos-delay="200">
-                  Turning Ideas Into 
-                  <span class="gradient-text">
-                    Stunning Designs
-                  </span>
+                  Turning Ideas Into
+                  <span class="gradient-text"> Stunning Designs </span>
                 </h1>
                 <h2 data-aos="fade-up" data-aos-delay="300">
                   <span
@@ -92,9 +93,9 @@
                   ></span>
                 </h2>
                 <p data-aos="fade-up" data-aos-delay="400">
-                  We create unique and impactful designs that help brands 
-                  stand out, connect with their audience, and make a lasting 
-                  impression. 
+                  We create unique and impactful designs that help brands stand
+                  out, connect with their audience, and make a lasting
+                  impression.
                 </p>
                 <div
                   class="hero-actions"
@@ -102,48 +103,103 @@
                   data-aos-delay="500"
                 >
                   <a href="portfolio.html" class="btn btn-primary"
-                    >View My Work <i class="bi bi-eye"></i></a
-                  >
+                    >View My Work <i class="bi bi-eye"></i
+                  ></a>
                   <a href="contact.html" class="btn btn-primary"
-                    >Get In Touch <i class="bi bi-phone"></i></a
-                  >
+                    >Get In Touch <i class="bi bi-phone"></i
+                  ></a>
                 </div>
-                
               </div>
             </div>
+
+            <!-- End Swipper -->
+
             <div class="col-lg-6 order-1 order-lg-2">
               <div class="hero-image" data-aos="zoom-in" data-aos-delay="300">
                 <div class="image-wrapper">
-                  <img
-                    src="assets/img/hero4.png"
-                    alt="Sarah Mitchell"
-                    class="img-fluid"
-                  />
-                  <div class="floating-elements">
-                    <div
-                      class="floating-card design"
-                      data-aos="fade-left"
-                      data-aos-delay="700"
-                    >
-                      <i class="bi bi-palette"></i>
-                      <span>Design</span>
+                  <div class="swiper init-swiper">
+                    <script type="application/json" class="swiper-config">
+                      {
+                        "loop": true,
+                        "speed": 600,
+                        "autoplay": {
+                          "delay": 5000
+                        },
+                        "slidesPerView": "auto",
+                        "pagination": {
+                          "el": ".swiper-pagination",
+                          "type": "bullets",
+                          "clickable": true
+                        }
+                      }
+                    </script>
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="testimonial-item">
+                          <div class="testimonial-content">
+                            <img
+                              src="assets/img/2.jpg"
+                              class="img-fluid rounded testimonial-img"
+                              alt="swiper photo"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <!-- End testimonial item -->
+
+                      <div class="swiper-slide">
+                        <div class="testimonial-item">
+                          <div class="testimonial-content">
+                            <img
+                              src="assets/img/6.jpg"
+                              class="img-fluid rounded testimonial-img"
+                              alt="swiper photo"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <!-- End testimonial item -->
+
+                      <div class="swiper-slide">
+                        <div class="testimonial-item">
+                          <div class="testimonial-content">
+                            <img
+                              src="assets/img/4.jpg"
+                              class="img-fluid rounded testimonial-img"
+                              alt="swiper photo"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <!-- End testimonial item -->
+
+                      <div class="swiper-slide">
+                        <div class="testimonial-item">
+                          <div class="testimonial-content">
+                            <img
+                              src="assets/img/15.jpg"
+                              class="img-fluid rounded testimonial-img"
+                              alt="swiper photo"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <!-- End testimonial item -->
+
+                      <div class="swiper-slide">
+                        <div class="testimonial-item">
+                          <div class="testimonial-content">
+                            <img
+                              src="assets/img/21.jpg"
+                              class="img-fluid rounded testimonial-img"
+                              alt="swiper photo"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <!-- End testimonial item -->
                     </div>
-                    <div
-                      class="floating-card code"
-                      data-aos="fade-right"
-                      data-aos-delay="800"
-                    >
-                      <i class="bi bi-award"></i>
-                      <span>Branding</span>
-                    </div>
-                    <div
-                      class="floating-card creativity"
-                      data-aos="fade-up"
-                      data-aos-delay="900"
-                    >
-                      <i class="bi bi-lightbulb"></i>
-                      <span>Ideas</span>
-                    </div>
+                    <div class="swiper-pagination"></div>
                   </div>
                 </div>
               </div>
@@ -155,38 +211,46 @@
 
       <!-- About Section -->
       <section id="about" class="about section">
-
         <!-- Section Title -->
         <div class="container section-title" data-aos="fade-up">
           <h2>About</h2>
-        <p>
-          We create unique and impactful designs that help brands stand out, connect with their audience, and make a lasting impression. 
-        </p>
-        </div><!-- End Section Title -->
+          <p>
+            We create unique and impactful designs that help brands stand out,
+            connect with their audience, and make a lasting impression.
+          </p>
+        </div>
+        <!-- End Section Title -->
 
         <div class="container" data-aos="fade-up" data-aos-delay="100">
-
           <!-- Intro + Photo -->
           <div class="row align-items-center justify-content-between gy-5 mb-5">
             <div class="col-lg-5" data-aos="zoom-in" data-aos-delay="250">
               <div class="d-flex justify-content-between">
-                <div class="d-flex col-md-6 me-2">
-                  <img
-                    src="assets/img/6.jpg"
-                    class="img-fluid rounded"
-                    alt=""
-                  />
-                </div>
-                <div class="col-lg-6 col-md-6">
+                <div class="me-2">
                   <img
                     src="assets/img/1.jpg"
                     class="img-fluid mb-2 rounded"
-                    alt=""
+                    alt="about"
                   />
+
+                  <img
+                    src="assets/img/3.jpg"
+                    class="img-fluid mb-2 rounded"
+                    alt="about"
+                  />
+                </div>
+
+                <div>
                   <img
                     src="assets/img/4.jpg"
                     class="img-fluid mb-2 rounded"
-                    alt=""
+                    alt="about"
+                  />
+
+                  <img
+                    src="assets/img/6.jpg"
+                    class="img-fluid mb-2 rounded"
+                    alt="about"
                   />
                 </div>
               </div>
@@ -196,162 +260,81 @@
               <div class="intro-content">
                 <h2 class="headline">Good designs Builds Brands.</h2>
                 <p class="lead">
-                  We are a creative graphic design studio dedicated to turning ideas into 
-                  powerful visual experiences. We help businesses, brands, and individuals 
-                  communicate their stories through professional, creative, and meaningful design.
+                  We are a creative graphic design studio dedicated to turning
+                  ideas into powerful visual experiences. We help businesses,
+                  brands, and individuals communicate their stories through
+                  professional, creative, and meaningful design.
                 </p>
                 <p class="lead">
-                  From branding and logo design to social media graphics, print materials,
-                  advertising, and digital design, we combine creativity, strategy, and 
-                  attention to detail to deliver designs that make an impact. 
+                  From branding and logo design to social media graphics, print
+                  materials, advertising, and digital design, we combine
+                  creativity, strategy, and attention to detail to deliver
+                  designs that make an impact.
                 </p>
-
-                <div class="cta-group text-center">
-                  <a href="assets/img/ideaplug.pdf" class="btn link-underline">
-                    Download Profile <i class="bi bi-download"></i>
-                  </a>
-                </div>
               </div>
             </div>
-
           </div>
           <!-- End Intro + Photo -->
 
           <!-- Skills Grid -->
           <div class="mb-5">
             <div class="row g-4">
-              <div class="col-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="120">
+              <div
+                class="col-6 col-md-4 col-lg-3"
+                data-aos="fade-up"
+                data-aos-delay="120"
+              >
                 <div class="skill-item">
                   <i class="bi bi-filetype-psd bi-layout-text-window"></i>
                   <h3>Photoshop & Illustrator</h3>
-                  <p>Experts in creating logos, icons, photo editing, retouching and creative manipulation.</p>
+                  <p>
+                    Experts in creating logos, icons, photo editing, retouching
+                    and creative manipulation.
+                  </p>
                 </div>
               </div>
-              <div class="col-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="180">
+              <div
+                class="col-6 col-md-4 col-lg-3"
+                data-aos="fade-up"
+                data-aos-delay="180"
+              >
                 <div class="skill-item">
                   <i class="bi bi-award"></i>
                   <h3>Brand Identity</h3>
                   <p>Building memorable brands design that stand out.</p>
                 </div>
               </div>
-              <div class="col-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="240">
+              <div
+                class="col-6 col-md-4 col-lg-3"
+                data-aos="fade-up"
+                data-aos-delay="240"
+              >
                 <div class="skill-item">
                   <i class="bi bi-camera"></i>
                   <h3>Color Theory</h3>
                   <p>Applying the right colors to evoke emotion and impact.</p>
                 </div>
               </div>
-              <div class="col-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+              <div
+                class="col-6 col-md-4 col-lg-3"
+                data-aos="fade-up"
+                data-aos-delay="300"
+              >
                 <div class="skill-item">
                   <i class="bi bi-fingerprint"></i>
                   <h3>AI powered designs</h3>
-                  <p>Using AI tools to create, upscale, restore & enhance images instantly.</p>
+                  <p>
+                    Using AI tools to create, upscale, restore & enhance images
+                    instantly.
+                  </p>
                 </div>
               </div>
             </div>
           </div>
           <!-- End Skills Grid -->
         </div>
-
       </section>
       <!-- /About Section -->
-
-      <!-- Portfolio Section -->
-      <section id="portfolio" class="portfolio section">
-
-        <!-- Section Title -->
-        <div class="container section-title" data-aos="fade-up">
-          <h2>Portfolio</h2>
-          <p>
-            Explore a collection of creative projects of our works in branding, 
-            digital design, advertising, and visual communication. Each project reflects our 
-            passion for turning ideas into impactful designs that connect with audiences and
-            bring brands to life. 
-          </p>
-        </div><!-- End Section Title -->
-
-        <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-          <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
-
-            <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="300">
-              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-strategy">
-                <div class="portfolio-card">
-                  <div class="portfolio-img">
-                    <img src="assets/img/1.jpg" alt="Portfolio Item" class="img-fluid">
-                    <div class="portfolio-overlay">
-                      <a href="assets/img/1.jpg" class="orange glightbox portfolio-lightbox"><i class="bi bi-plus"></i></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-finance">
-                <div class="portfolio-card">
-                  <div class="portfolio-img">
-                    <img src="assets/img/2.jpg" alt="Portfolio Item" class="img-fluid">
-                    <div class="portfolio-overlay">
-                      <a href="assets/img/2.jpg" class="orange glightbox portfolio-lightbox"><i class="bi bi-plus"></i></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-operations">
-                <div class="portfolio-card">
-                  <div class="portfolio-img">
-                    <img src="assets/img/4.jpg" alt="Portfolio Item" class="img-fluid">
-                    <div class="portfolio-overlay">
-                      <a href="assets/img/4.jpg" class="orange glightbox portfolio-lightbox"><i class="bi bi-plus"></i></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-technology">
-                <div class="portfolio-card">
-                  <div class="portfolio-img">
-                    <img src="assets/img/5.jpg" alt="Portfolio Item" class="img-fluid">
-                    <div class="portfolio-overlay">
-                      <a href="assets/img/5.jpg" class="orange glightbox portfolio-lightbox"><i class="bi bi-plus"></i></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-strategy">
-                <div class="portfolio-card">
-                  <div class="portfolio-img">
-                    <img src="assets/img/6.jpg" alt="Portfolio Item" class="img-fluid">
-                    <div class="portfolio-overlay">
-                      <a href="assets/img/6.jpg" class="orange glightbox portfolio-lightbox"><i class="bi bi-plus"></i></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-finance">
-                <div class="portfolio-card">
-                  <div class="portfolio-img">
-                    <img src="assets/img/3.jpg" alt="Portfolio Item" class="img-fluid">
-                    <div class="portfolio-overlay">
-                      <a href="assets/img/3.jpg" class="orange glightbox portfolio-lightbox"><i class="bi bi-plus"></i></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div><!-- End Portfolio Items Container -->
-
-          </div>
-
-          <div class="text-center mt-5" data-aos="fade-up" data-aos-delay="400">
-            <a href="assets/img/ideaplug.pdf" class="btn btn-primary">View All Case Studies <i class="bi bi-eye"></i></a>
-          </div>
-
-        </div>
-
-      </section>
-      <!-- /Portfolio Section -->
 
       <!-- Services Section -->
       <section id="services" class="services section">
@@ -379,9 +362,7 @@
                 </div>
                 <div>
                   <h4 class="title">
-                    <a href="" class="stretched-link"
-                      >Logo & Branding</a
-                    >
+                    <a href="" class="stretched-link">Logo & Branding</a>
                   </h4>
                   <p class="description">
                     Build a memorable visual identity with unique logos, brand
@@ -403,13 +384,11 @@
                 </div>
                 <div>
                   <h4 class="title">
-                    <a href="" class="stretched-link"
-                      >Social Media Design</a
-                    >
+                    <a href="" class="stretched-link">Social Media Design</a>
                   </h4>
                   <p class="description">
-                    Eye-catching graphics for Facebook, Instagram, TikTok,
-                    LinkedIn and other social media platforms.
+                    Create engaging social media graphics that strengthen your
+                    brand and capture your audience's attention.
                   </p>
                 </div>
               </div>
@@ -427,13 +406,11 @@
                 </div>
                 <div>
                   <h4 class="title">
-                    <a href="" class="stretched-link"
-                      >Flyers & Posters</a
-                    >
+                    <a href="" class="stretched-link">Flyers & Posters</a>
                   </h4>
                   <p class="description">
-                    Professional flyers, posters and promotional graphics
-                    designed to capture attention and communicate your message.
+                    Design eye-catching flyers and posters that promote
+                    products, services, events, and special offers
                   </p>
                 </div>
               </div>
@@ -451,13 +428,11 @@
                 </div>
                 <div>
                   <h4 class="title">
-                    <a href="" class="stretched-link"
-                      >Print Design</a
-                    >
+                    <a href="" class="stretched-link">Web & App Development</a>
                   </h4>
                   <p class="description">
-                    Business cards, brochures, certificates, menus, catalogues,
-                    wedding invitations and other print materials
+                    Development of modern and responsive websites that deliver
+                    seamless digital experiences across multiple platforms
                   </p>
                 </div>
               </div>
@@ -476,12 +451,12 @@
                 <div>
                   <h4 class="title">
                     <a href="" class="stretched-link"
-                      >Digital Design</a
+                      >Brochure & Catalogue Design</a
                     >
                   </h4>
                   <p class="description">
-                    Website graphics, digital advertisements, banners,
-                    presentations and other digital visual content.
+                    Present your products and services professionally through
+                    well-structured brochures, catalogues, and company profiles.
                   </p>
                 </div>
               </div>
@@ -499,13 +474,12 @@
                 </div>
                 <div>
                   <h4 class="title">
-                    <a href="" class="stretched-link"
-                      >Photo Editing</a
-                    >
+                    <a href="" class="stretched-link">UX/UI Design</a>
                   </h4>
                   <p class="description">
-                    Professional retouching, background removal, image
-                    enhancement, color correction and photo manipulation.
+                    Developing intuitive interfaces and user-friendly
+                    experiences that make websites and applications easy to
+                    navigate.
                   </p>
                 </div>
               </div>
@@ -516,17 +490,183 @@
       </section>
       <!-- /Services Section -->
 
+      <!-- Portfolio Section -->
+      <section id="portfolio" class="portfolio section">
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Portfolio</h2>
+          <p>
+            Explore a collection of creative projects of our works in branding,
+            digital design, advertising, and visual communication. Each project
+            reflects our passion for turning ideas into impactful designs that
+            connect with audiences and bring brands to life.
+          </p>
+        </div>
+        <!-- End Section Title -->
+
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div
+            class="isotope-layout"
+            data-default-filter="*"
+            data-layout="masonry"
+            data-sort="original-order"
+          >
+            <div
+              class="row gy-4 isotope-container"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-strategy"
+              >
+                <div class="portfolio-card">
+                  <div class="portfolio-img">
+                    <img
+                      src="assets/img/1.jpg"
+                      alt="Portfolio Item"
+                      class="img-fluid"
+                    />
+                    <div class="portfolio-overlay">
+                      <a
+                        href="assets/img/1.jpg"
+                        class="orange glightbox portfolio-lightbox"
+                        ><i class="bi bi-plus"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-finance"
+              >
+                <div class="portfolio-card">
+                  <div class="portfolio-img">
+                    <img
+                      src="assets/img/2.jpg"
+                      alt="Portfolio Item"
+                      class="img-fluid"
+                    />
+                    <div class="portfolio-overlay">
+                      <a
+                        href="assets/img/2.jpg"
+                        class="orange glightbox portfolio-lightbox"
+                        ><i class="bi bi-plus"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-operations"
+              >
+                <div class="portfolio-card">
+                  <div class="portfolio-img">
+                    <img
+                      src="assets/img/4.jpg"
+                      alt="Portfolio Item"
+                      class="img-fluid"
+                    />
+                    <div class="portfolio-overlay">
+                      <a
+                        href="assets/img/4.jpg"
+                        class="orange glightbox portfolio-lightbox"
+                        ><i class="bi bi-plus"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-technology"
+              >
+                <div class="portfolio-card">
+                  <div class="portfolio-img">
+                    <img
+                      src="assets/img/5.jpg"
+                      alt="Portfolio Item"
+                      class="img-fluid"
+                    />
+                    <div class="portfolio-overlay">
+                      <a
+                        href="assets/img/5.jpg"
+                        class="orange glightbox portfolio-lightbox"
+                        ><i class="bi bi-plus"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-strategy"
+              >
+                <div class="portfolio-card">
+                  <div class="portfolio-img">
+                    <img
+                      src="assets/img/6.jpg"
+                      alt="Portfolio Item"
+                      class="img-fluid"
+                    />
+                    <div class="portfolio-overlay">
+                      <a
+                        href="assets/img/6.jpg"
+                        class="orange glightbox portfolio-lightbox"
+                        ><i class="bi bi-plus"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-finance"
+              >
+                <div class="portfolio-card">
+                  <div class="portfolio-img">
+                    <img
+                      src="assets/img/3.jpg"
+                      alt="Portfolio Item"
+                      class="img-fluid"
+                    />
+                    <div class="portfolio-overlay">
+                      <a
+                        href="assets/img/3.jpg"
+                        class="orange glightbox portfolio-lightbox"
+                        ><i class="bi bi-plus"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End Portfolio Items Container -->
+          </div>
+
+          <div class="text-center mt-5" data-aos="fade-up" data-aos-delay="400">
+            <a href="assets/img/ideaplug.pdf" class="btn btn-primary"
+              >View All Case Studies <i class="bi bi-eye"></i
+            ></a>
+          </div>
+        </div>
+      </section>
+      <!-- /Portfolio Section -->
+
       <!-- Contact Section -->
       <section id="contact" class="contact section">
-
         <!-- Section Title -->
         <div class="container section-title" data-aos="fade-up">
           <h2>Contact</h2>
-          <p>Have a project in mind? Get in touch today and let`s create something amazing together. </p>
-        </div><!-- End Section Title -->
+          <p>
+            Have a project in mind? Get in touch today and let`s create
+            something amazing together.
+          </p>
+        </div>
+        <!-- End Section Title -->
 
         <div class="container" data-aos="fade-up" data-aos-delay="100">
-
           <div class="row g-4 g-lg-5">
             <div class="col-lg-5">
               <div class="info-box" data-aos="fade-up" data-aos-delay="200">
@@ -565,30 +705,60 @@
 
             <div class="col-lg-7">
               <div class="contact-form" data-aos="fade-up" data-aos-delay="300">
-
-                <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+                <form
+                  action="forms/contact.php"
+                  method="post"
+                  class="php-email-form"
+                  data-aos="fade-up"
+                  data-aos-delay="200"
+                >
                   <div class="row gy-4">
+                    <div class="col-md-6">
+                      <input
+                        type="text"
+                        name="name"
+                        class="form-control"
+                        placeholder="Your Name"
+                        required=""
+                      />
+                    </div>
 
                     <div class="col-md-6">
-                      <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
-                    </div>
-
-                    <div class="col-md-6 ">
-                      <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+                      <input
+                        type="email"
+                        class="form-control"
+                        name="email"
+                        placeholder="Your Email"
+                        required=""
+                      />
                     </div>
 
                     <div class="col-12">
-                      <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
+                      <input
+                        type="text"
+                        class="form-control"
+                        name="subject"
+                        placeholder="Subject"
+                        required=""
+                      />
                     </div>
 
                     <div class="col-12">
-                      <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
+                      <textarea
+                        class="form-control"
+                        name="message"
+                        rows="6"
+                        placeholder="Message"
+                        required=""
+                      ></textarea>
                     </div>
 
                     <div class="col-12 text-center">
                       <div class="loading">Loading</div>
                       <div class="error-message"></div>
-                      <div class="sent-message">Your message has been sent. Thank you!</div>
+                      <div class="sent-message">
+                        Your message has been sent. Thank you!
+                      </div>
                       <button type="submit" class="btn">Send Message</button>
                     </div>
                   </div>
@@ -600,6 +770,67 @@
       </section>
       <!-- /Contact Section -->
 
+      
+       <!-- Clients Section -->
+      <section id="clients" class="clients section">
+        <div class="container">
+          <div class="swiper init-swiper">
+            <script type="application/json" class="swiper-config">
+              {
+                "loop": true,
+                "speed": 600,
+                "autoplay": {
+                  "delay": 5000
+                },
+                "slidesPerView": "auto",
+                "pagination": {
+                  "el": ".swiper-pagination",
+                  "type": "bullets",
+                  "clickable": true
+                },
+                "breakpoints": {
+                  "320": {
+                    "slidesPerView": 2,
+                    "spaceBetween": 40
+                  },
+                  "480": {
+                    "slidesPerView": 3,
+                    "spaceBetween": 60
+                  },
+                  "640": {
+                    "slidesPerView": 4,
+                    "spaceBetween": 80
+                  },
+                  "992": {
+                    "slidesPerView": 4,
+                    "spaceBetween": 80
+                  }
+                }
+              }
+            </script>
+            <div class="swiper-wrapper align-items-center">
+              <div class="swiper-slide">
+                <img src="assets/img/c8.png" style="height:8em;width:9em" class="img-fluid rounded" alt="client logo" />
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/img/c2.png" style="height:8em;width:9em" class="img-fluid rounded" alt="client logo" />
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/img/c7.jpg" style="height:8em;width:9em" class="img-fluid rounded" alt="client logo" />
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/img/c5.png" style="height:8em;width:9em" class="img-fluid rounded" alt="client logo" />
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/img/c6.jpg" style="height:8em;width:9em" class="img-fluid rounded" alt="client logo" />
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /Clients Section -->
+     
     </main>
 
     <footer id="footer" class="footer">
