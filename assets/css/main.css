@@ -7,6 +7,8 @@
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
 :root { 
+  --plug2-color: #F89504;
+  --plug-color: #FF4B2A;
   --orange-color: #ffd000;
   --eyebrow-color: #e5b8ff;
   --background-color:#070b18;/* Background color for the entire website, including individual sections */
@@ -171,7 +173,7 @@ h6 {
 }
 
 .header .header-social-links a:hover {
-  color:#ffd000;
+  color:var(--plug-color);
 }
 
 .header .header-social-links a i {
@@ -494,8 +496,8 @@ h6 {
 }
 
 .footer .social-links a:hover {
-  color: var(--orange-color);
-  border-color: var(--orange-color);
+  color: var(--plug-color);
+  border-color: var(--plug-color);
 }
 
 .footer .credits {
@@ -522,7 +524,7 @@ h6 {
 #preloader:after {
   content: "";
   position: absolute;
-  border: 4px solid var(--accent-color);
+  border: 4px solid var(--plug-color);
   border-radius: 50%;
   animation: animate-preloader 2s cubic-bezier(0, 0.2, 0.8, 1) infinite;
 }
@@ -573,7 +575,7 @@ h6 {
 }
 
 .scroll-top:hover {
-  background-color: color-mix(in srgb, var(--orange-color), transparent 20%);
+  background-color: color-mix(in srgb, var(--plug-color), transparent 20%);
   color: var(--contrast-color);
 }
 
@@ -667,8 +669,8 @@ section,
 }
 
 .section-title h2 {
-  font-size: 2.5rem;
-  font-weight: 600;
+  font-size: 2rem;
+  font-weight: 510;
   line-height: 1;
   color: var(--heading-color);
   margin-bottom: 1.5rem;
@@ -702,22 +704,14 @@ section,
 }
 
 .hero .hero-content h1 {
-  font-size: 3.5rem;
-  font-weight: 700;
+  font-size: 2.5rem;
+  font-weight: 600;
   margin-bottom: 1rem;
   line-height: 1.2;
 }
 
 .hero .gradient-text {
-  background:
-      linear-gradient(
-          90deg,
-          #ff20c8,
-          #ff5c91,
-          #ffae00,
-          #ffe000
-      );
-
+  background: var(--plug-color);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -753,8 +747,8 @@ section,
 }
 
 .hero .hero-content h2 .typed {
-  color: var(--eyebrow-color);
-  font-weight: 600;
+  color: var(--plug-color);
+  font-weight: 550;
 }
 
 @media (max-width: 768px) {
@@ -788,18 +782,12 @@ section,
 .hero .hero-actions .btn.btn-primary {
   
   color: #101010;
-            background:
-                linear-gradient(
-                    90deg,
-                    #ffd000,
-                    #ff8c32,
-                    #ff38b5
-                );
+  background:var(--plug-color)
 }
 
 .hero .hero-actions .btn.btn-primary:hover {
   transform: translateY(-4px);
-  box-shadow: 0 15px 35px rgba(255, 50, 180, 0.25);
+  box-shadow: 0 15px 35px color-mix(in srgb, var(--plug-color), transparent 60%);              
 }
 
 .hero .hero-actions .btn.btn-outline {
@@ -1078,13 +1066,13 @@ section,
   border-radius: 1rem;
   transition: 0.3s ease-in-out;
   background: color-mix(in srgb, var(--background-color), var(--accent-color) 3%);
-  border: 1px solid color-mix(in srgb, var(--orange-color), transparent 88%);
+  border: 1px solid color-mix(in srgb, var(--plug-color), transparent 70%);
   height: 100%;
 }
 
 .about .skill-item i {
   font-size: 24px;
-  color: var(--orange-color);
+  color: var(--plug-color);
   margin-bottom: 16px;
   display: inline-block;
 }
@@ -1103,8 +1091,8 @@ section,
 
 .about .skill-item:hover {
   transform: translateY(-3px);
-  border-color: color-mix(in srgb, var(--orange-color), transparent 60%);
-  box-shadow: 0 10px 30px color-mix(in srgb, var(--orange-color), transparent 92%);
+  border-color: color-mix(in srgb, var(--plug-color), transparent 90%);
+  box-shadow: 0 10px 30px color-mix(in srgb, var(--plug-color), transparent 80%);
   
 }
 
@@ -1328,6 +1316,7 @@ section,
     margin: 0 -8px;
   }
 }
+
 
 /*--------------------------------------------------------------
 # Testimonials Section
@@ -1564,25 +1553,19 @@ section,
   border-radius: 1rem;
   transition: 0.3s ease-in-out;
   background: color-mix(in srgb, var(--background-color), var(--accent-color) 3%);
-  border: 1px solid color-mix(in srgb, var(--orange-color), transparent 88%);
+  border: 1px solid color-mix(in srgb, var(--plug-color), transparent 70%);
   height: 100%;
 }
 
 .services .service-item:hover {
   transform: translateY(-3px);
-  border-color: color-mix(in srgb, var(--orange-color), transparent 90%);
-  box-shadow: 0 10px 30px color-mix(in srgb, var(--orange-color), transparent 90%);
+  border-color: color-mix(in srgb, var(--plug-color), transparent 90%);
+  box-shadow: 0 10px 30px color-mix(in srgb, var(--plug-color), transparent 80%);
 }
 
 .services .service-item .icon {
   color: #101010;
-            background:
-                linear-gradient(
-                    90deg,
-                    #ffd000,
-                    #ff8c32,
-                    #ff38b5
-                );
+  background:color-mix(in srgb, var(--plug-color), transparent 10%);              
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1600,12 +1583,7 @@ section,
 }
 
 .services .service-item:hover .icon {
-  background:linear-gradient(
-                  90deg,
-                  #ffd000,
-                  #ff8c32,
-                  #ff38b5
-              );
+   background:color-mix(in srgb, var(--plug-color), transparent 10%);              
 }
 
 .services .service-item:hover .icon i {
@@ -1624,7 +1602,7 @@ section,
 }
 
 .services .service-item .title a:hover {
-  color: var(--orange-color);
+  color: var(--plug-color);
 }
 
 .services .service-item .description {
@@ -2220,7 +2198,7 @@ section,
 .portfolio .portfolio-card .portfolio-img .portfolio-overlay a {
   width: 45px;
   height: 45px;
-  background-color: var(--background-color);
+  background-color: var(--plug-color);
   color: var(--contrast-color);
   border-radius: 50%;
   display: flex;
@@ -2231,7 +2209,7 @@ section,
 }
 
 .portfolio .portfolio-card .portfolio-img .portfolio-overlay a:hover {
-  background-color: color-mix(in srgb, var(--background-color), #fff 5%);
+  background-color: color-mix(in srgb, var(--background-color), var(--plug-color) 50%);
   transform: translateY(-5px);
 }
 
@@ -2278,18 +2256,12 @@ section,
 
 .portfolio .btn.btn-primary {
   color: #101010;
-            background:
-                linear-gradient(
-                    90deg,
-                    #ffd000,
-                    #ff8c32,
-                    #ff38b5
-                );
+  background:var(--plug-color);
 }
 
 .portfolio .btn.btn-primary:hover {
   transform: translateY(-4px);
-  box-shadow: 0 15px 35px rgba(255, 50, 180, 0.25);
+  box-shadow: 0 15px 35px color-mix(in srgb, var(--plug-color), transparent 60%);              
 }
 
 /*--------------------------------------------------------------
@@ -2704,7 +2676,7 @@ section,
 }
 
 .contact .info-item:hover .icon-box {
-  background-color: var(--orange-color);
+  background-color: var(--plug-color);
 }
 
 .contact .info-item .content h4 {
@@ -2765,7 +2737,7 @@ section,
 .contact .contact-form .form-control:focus,
 .contact .contact-form .form-select:focus {
   box-shadow: none;
-  border-color: var(--orange-color);
+  border-color: var(--plug-color);
 }
 
 .contact .contact-form .form-control::placeholder,
@@ -2789,7 +2761,7 @@ section,
 }
 
 .contact .contact-form .btn:hover {
-  background-color: color-mix(in srgb, var(--surface-color), transparent 70%);
+  background-color: color-mix(in srgb, var(--plug-color), transparent 60%);
 }
 
 /*--------------------------------------------------------------
