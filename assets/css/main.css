@@ -7,8 +7,8 @@
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
 :root { 
-  --plug2-color: #F89504;
-  --plug-color: #FF4B2A;
+  --plug-color: #FD0101;
+  --plug2-color: #FF4B2A;
   --orange-color: #ffd000;
   --eyebrow-color: #e5b8ff;
   --background-color:#070b18;/* Background color for the entire website, including individual sections */
@@ -17,7 +17,7 @@
   --accent-color: #1387c1; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
   --surface-color: #141f26; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
   --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
-  --swiper-pagination-color: #FF4B2A;
+  --swiper-pagination-color: #FD0101;
 }
 
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
@@ -705,17 +705,15 @@ section,
 }
 
 .hero .hero-content h1 {
-  font-size: 2.5rem;
-  font-weight: 600;
+  font-size: 2.2rem;
+  font-weight: 550;
   margin-bottom: 1rem;
   line-height: 1.2;
 }
 
 .hero .gradient-text {
-  background: var(--plug-color);
   -webkit-background-clip: text;
   background-clip: text;
-  color: transparent;
 }
 
 .hero .hero-content h1 .highlight {
@@ -748,7 +746,7 @@ section,
 }
 
 .hero .hero-content h2 .typed {
-  color: var(--plug-color);
+  color: color-mix(in srgb, var(--plug-color), transparent 10%);
   font-weight: 550;
 }
 
@@ -777,13 +775,11 @@ section,
   font-weight: 600;
   text-decoration: none;
   transition: all 0.3s ease;
-  border: 2px solid;
+  border: 0px solid;
 }
 
 .hero .hero-actions .btn.btn-primary {
-  
-  color: #101010;
-  background:var(--plug-color)
+  background:color-mix(in srgb, var(--plug-color), transparent 30%)
 }
 
 .hero .hero-actions .btn.btn-primary:hover {
@@ -844,6 +840,9 @@ section,
   position: relative;
   max-width: 450px;
   margin: 0 auto;
+  border: 2px solid;
+  border-color: color-mix(in srgb, var(--plug-color), transparent 60%);
+  border-radius: 0.5rem;
 }
 
 .hero .hero-image .image-wrapper img {
@@ -1397,7 +1396,7 @@ section,
 }
 
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: var(--accent-color);
+  background-color: var(--plug-color);
 }
 
 /*--------------------------------------------------------------
@@ -1566,7 +1565,7 @@ section,
 
 .services .service-item .icon {
   color: #101010;
-  background:color-mix(in srgb, var(--plug-color), transparent 10%);              
+  background:color-mix(in srgb, var(--plug-color), transparent 30%);              
   display: flex;
   align-items: center;
   justify-content: center;
@@ -2252,12 +2251,11 @@ section,
   font-weight: 600;
   text-decoration: none;
   transition: all 0.3s ease;
-  border: 2px solid;
+  border: 0.1px solid;
 }
 
 .portfolio .btn.btn-primary {
-  color: #101010;
-  background:var(--plug-color);
+  background:color-mix(in srgb, var(--plug-color), transparent 30%);
 }
 
 .portfolio .btn.btn-primary:hover {
@@ -2677,7 +2675,7 @@ section,
 }
 
 .contact .info-item:hover .icon-box {
-  background-color: var(--plug-color);
+  background-color: color-mix(in srgb, var(--plug-color), transparent 30%);
 }
 
 .contact .info-item .content h4 {
